@@ -1,0 +1,2 @@
+
+val ten = fold(fn (
