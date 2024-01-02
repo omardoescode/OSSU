@@ -76,5 +76,4 @@ T6 = T3 (since g(x) is a valid input to f)
 compose: (T3 -> T4) * (T5 -> T3) -> (T5 -> T4)
 compose: ('a -> 'b) * ('c -> 'a) -> ('c -> 'b)
 
-
 *)
