@@ -5,17 +5,18 @@
 
 class MyPiece < Piece
   # The constant All_My_Pieces should be declared here
-  All_My_Pieces = All_Pieces + [rotations([[0, 0], [0, 1], [1, 0], [1, 1], [1, 2]]),
-                                [[[0, 0], [-1, 0], [-2, 0], [1, 0], [2, 0]],
-                                 [[0, 0], [0, -1], [0, -2], [0, 1], [0, 2]]],
-                                rotations([[0, 0], [0, -1], [1, 0]])]
+  All_My_Pieces = All_Pieces +
+    [rotations([[0, 0], [-1, 0], [-1, -1], [0, -1], [1, 0]]),
+     [[[0, 0], [-1, 0], [-2, 0], [1, 0], [2, 0]],
+      [[0, 0], [0, -1], [0, -2], [0, 1], [0, 2]]],
+     rotations([[0, 0], [0, -1], [1, 0]])]
 
   def self.next_piece (board)
     MyPiece.new(All_My_Pieces.sample, board)
   end
 
   def self.next_cheat_piece(board)
-    MyPiece.new(rotations([[0, 0], [0, 0], [0, 0], [0, 0]]), board)
+    MyPiece.new([[[0, 0]]], board)
   end
 end
 
@@ -43,7 +44,7 @@ class MyBoard < Board
   end
 
   def cheat
-    if @score >= 100 and not @special_case
+    if not @special_case and @score >= 100
       @score -= 100
       @special_case = true
     end
