@@ -26,7 +26,8 @@
 
 5. [Programming Language C](https://coursera.org/learn/programming-languages-part-c)
 
-   - Currently doing
+   - This course explained the basic concepts of OOP, including basic ruby concepts as introductory material to OOP in ruby, then explained concepts such as classes, inheritance, dynamic dispatch, double dispatch, subtyping
+   - An awesome homework was assigned once again to create a programming language (A Geometrical Language) in which we needed to understand the key concepts between functional programming and object-oriented programming, so we created the interpreter twice in each style in two languages (ML & Ruby) (Most of the code was provided for ML)
 
 6. [Calculus 1A: Differentitation](https://openlearninglibrary.mit.edu/courses/course-v1:MITx+18.01.1x+2T2019/course/)
    - I have a good background on calculus, so I will just do the exercises
