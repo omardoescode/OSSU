@@ -1,6 +1,0 @@
-#lang racket
-
-(define (fib x)
-  (if (or (= x 1) (= x 2))
-      1
-      (fib (- x 1) (- x 2))))
