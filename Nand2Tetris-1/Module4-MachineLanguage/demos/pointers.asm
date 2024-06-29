@@ -28,6 +28,7 @@
   D;JEQ
 
   // arr[i] = -1
+  // OR RAM[arr + i] = -1
   @arr
   D=M
   @i
