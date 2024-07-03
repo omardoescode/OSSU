@@ -23,7 +23,7 @@
 // if (no == 1) sets out = !out   // bitwise not
 
 CHIP ALU {
-    IN  
+    IN 
         x[16], y[16],  // 16-bit inputs        
         zx, // zero the x input?
         nx, // negate the x input?
