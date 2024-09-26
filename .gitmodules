@@ -1,0 +1,3 @@
+[submodule "OperatingSystem/ostep-projects"]
+	path = OperatingSystem/ostep-projects
+	url = https://github.com/omardoescode/ostep-projects
